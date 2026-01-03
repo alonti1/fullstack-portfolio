@@ -1,13 +1,11 @@
 (function () {
   "use strict";
 
-  /* ===== Year in footer ===== */
   const yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ===== Mobile navigation ===== */
   const toggleBtn = document.querySelector(".nav-toggle");
   const navList = document.getElementById("primary-nav");
 
@@ -19,7 +17,6 @@
     });
   }
 
-  /* ===== Theme (Light / Dark) ===== */
 const root = document.documentElement;
 const themeBtn = document.getElementById("themeToggle");
 const themeIcon = document.getElementById("themeIcon");
@@ -28,13 +25,11 @@ function setTheme(theme) {
   root.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
 
-  // שינוי אייקון לפי המצב הנוכחי
   if (themeIcon) {
     themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
   }
 }
 
-// ברירת מחדל: Light
 const savedTheme = localStorage.getItem("theme");
 setTheme(savedTheme || "light");
 
@@ -48,7 +43,6 @@ if (themeBtn) {
   });
 }
 
-/* ===== Contact form validation (demo) ===== */
 const form = document.getElementById("contactForm");
 if (form) {
   const fullName = document.getElementById("fullName");
@@ -115,11 +109,9 @@ if (form) {
       return;
     }
 
-    // Demo success (no backend)
     if (status) status.textContent = "ההודעה נשלחה בהצלחה! (דמו)";
     form.reset();
 
-    // נקה שגיאות אחרי reset
     setError(fullName, errName, "");
     setError(email, errEmail, "");
     setError(message, errMsg, "");
