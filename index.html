@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alon | פורטפוליו Full Stack</title>
+    <meta
+      name="description"
+      content="פורטפוליו Full Stack של Alon: פרויקטים, טכנולוגיות, וקצת עליי. צרו קשר לקבלת פרטים נוספים."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack, HTML, CSS, JavaScript, React, Node.js, Portfolio, פרויקטים"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alon | פורטפוליו Full Stack" />
+    <meta
+      property="og:description"
+      content="פרויקטים, טכנולוגיות, וקצת עליי. צרו קשר."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:locale" content="he_IL" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Alon | פורטפוליו Full Stack" />
+    <meta
+      name="twitter:description"
+      content="פורטפוליו Full Stack: פרויקטים, טכנולוגיות וקשר."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">דלג לתוכן המרכזי</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand" aria-label="לוגו וכותרת">
+          <span class="brand-mark" aria-hidden="true">{ }</span>
+          <div class="brand-text">
+            <p class="brand-name">Alon</p>
+            <p class="brand-sub">Full Stack Developer (Student)</p>
+          </div>
+        </div>
+
+        <nav class="site-nav" aria-label="תפריט ראשי">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+          >
+            <span class="sr-only">פתח/סגור תפריט</span>
+            <span aria-hidden="true">☰</span>
+          </button>
+
+          <ul id="primary-nav" class="nav-list">
+            <li><a class="nav-link" href="#home">דף בית</a></li>
+            <li><a class="nav-link" href="#about">אודות</a></li>
+            <li><a class="nav-link" href="#projects">פרויקטים</a></li>
+            <li><a class="nav-link" href="#contact">יצירת קשר</a></li>
+          </ul>
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="שינוי מצב תצוגה"
+          >
+            <span id="themeIcon" aria-hidden="true">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" tabindex="-1">
+      <section id="home" class="hero" aria-label="פתיח">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1>פורטפוליו Full Stack</h1>
+            <p class="lead">
+              היי, אני Alon. אני לומד Full Stack ובונה פרויקטים שמדגישים UI נקי,
+              קוד קריא ופתרון בעיות.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">לפרויקטים</a>
+              <a class="btn" href="#contact">צור קשר</a>
+            </div>
+
+            <ul class="quick-points" aria-label="נקודות עיקריות">
+              <li>HTML סמנטי + נגישות בסיסית</li>
+              <li>CSS עם Grid/Flexbox ורספונסיביות</li>
+              <li>JavaScript לאינטראקציות ולידציה</li>
+            </ul>
+          </div>
+
+          <aside class="hero-card" aria-label="כרטיס מידע מהיר">
+            <h2 class="card-title">סטאק עיקרי</h2>
+            <ul class="pill-list">
+              <li class="pill">HTML</li>
+              <li class="pill">CSS</li>
+              <li class="pill">JavaScript</li>
+              <li class="pill">React</li>
+              <li class="pill">Node.js</li>
+            </ul>
+
+            <h3 class="card-subtitle">מטרות</h3>
+            <ol class="goals">
+              <li>לשפר יכולות Front-End</li>
+              <li>להעמיק Back-End</li>
+              <li>לבנות פרויקטים אמיתיים מקצה לקצה</li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-label="אודות">
+        <div class="container">
+          <header class="section-header">
+            <h2>אודות</h2>
+            <p>קצת עליי ועל הדרך שאני עובד.</p>
+          </header>
+
+          <article class="about-grid">
+            <div class="about-block">
+              <h3>מי אני</h3>
+              <p>
+                סטודנט בקורס Full Stack, אוהב לפרק בעיות לחלקים קטנים ולבנות
+                פתרון מסודר. חשוב לי שהממשק יהיה ברור ושקוד יהיה קל לתחזוקה.
+              </p>
+            </div>
+
+            <div class="about-block">
+              <h3>איך אני בונה פרויקטים</h3>
+              <ul>
+                <li>תכנון מבנה עמוד עם HTML סמנטי</li>
+                <li>עיצוב רספונסיבי עם Flexbox / Grid</li>
+                <li>הוספת אינטראקציות ב-JavaScript</li>
+                <li>בדיקות ידניות ב-DevTools ובדפדפנים שונים</li>
+              </ul>
+            </div>
+
+            <div class="about-block">
+              <h3>טכנולוגיות</h3>
+              <ul class="tech-list">
+                <li><strong>Front:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Frameworks:</strong> React (בסיסי)</li>
+                <li><strong>Back:</strong> Node.js (בסיסי)</li>
+                <li><strong>Tools:</strong> Git, Chrome DevTools</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-label="פרויקטים">
+        <div class="container">
+          <header class="section-header">
+            <h2>פרויקטים</h2>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <img
+                src="assets/project-work-1.png"
+                alt="תצוגה מקדימה של פרויקט בעבודה"
+                class="project-img"
+              />
+
+              <div class="project-head">
+                <h3>פרויקט בעבודה</h3>
+              </div>
+              <p>
+                פרויקט זה נמצא כעת בשלבי פיתוח כחלק מהקורס Full Stack. מטרת
+                הפרויקט היא ליישם עקרונות של HTML סמנטי, עיצוב רספונסיבי וכתיבת
+                קוד נקי וקריא. פרטים נוספים, פונקציונליות וקישורים יתווספו
+                בהמשך.
+              </p>
+              <h4>טכנולוגיות</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS Grid</li>
+                <li>JavaScript</li>
+              </ul>
+              <div
+                class="project-links"
+                aria-label="קישורים לפרויקט Task Tracker"
+              >
+                <a
+                  href="https://github.com/example/task-tracker"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/project-work-2.png"
+                alt="תצוגה מקדימה של פרויקט בעבודה"
+                class="project-img"
+              />
+
+              <div class="project-head">
+                <h3>פרויקט בעבודה</h3>
+              </div>
+              <p>
+                פרויקט זה נמצא כעת בשלבי פיתוח כחלק מהקורס Full Stack. מטרת
+                הפרויקט היא ליישם עקרונות של HTML סמנטי, עיצוב רספונסיבי וכתיבת
+                קוד נקי וקריא. פרטים נוספים, פונקציונליות וקישורים יתווספו
+                בהמשך.
+              </p>
+              <h4>טכנולוגיות</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS Grid</li>
+                <li>JavaScript</li>
+              </ul>
+              <div
+                class="project-links"
+                aria-label="קישורים לפרויקט Task Tracker"
+              >
+                <a
+                  href="https://github.com/example/task-tracker"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/project-work-3.png"
+                alt="תצוגה מקדימה של פרויקט בעבודה"
+                class="project-img"
+              />
+
+              <div class="project-head">
+                <h3>פרויקט בעבודה</h3>
+              </div>
+              <p>
+                פרויקט זה נמצא כעת בשלבי פיתוח כחלק מהקורס Full Stack. מטרת
+                הפרויקט היא ליישם עקרונות של HTML סמנטי, עיצוב רספונסיבי וכתיבת
+                קוד נקי וקריא. פרטים נוספים, פונקציונליות וקישורים יתווספו
+                בהמשך.
+              </p>
+              <h4>טכנולוגיות</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS Grid</li>
+                <li>JavaScript</li>
+              </ul>
+              <div
+                class="project-links"
+                aria-label="קישורים לפרויקט Task Tracker"
+              >
+                <a
+                  href="https://github.com/example/task-tracker"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-label="יצירת קשר">
+        <div class="container">
+          <header class="section-header">
+            <h2>יצירת קשר</h2>
+            <p>אפשר להשאיר פרטים ואחזור אליך.</p>
+          </header>
+
+          <article class="contact-grid">
+            <div class="contact-info">
+              <h3>פרטים</h3>
+              <ul class="contact-list">
+                <li>
+                  <strong>אימייל:</strong>
+                  <a href="mailto:alon4474@gmail.com">alon4474@gmail.com</a>
+                </li>
+                <li>
+                  <strong>LinkedIn:</strong>
+                  <a
+                    href="https://www.linkedin.com/in/alon-or-406665319/"
+                    target="_blank"
+                    rel="noopener"
+                    >פרופיל</a
+                  >
+                </li>
+                <li>
+                  <strong>GitHub:</strong>
+                  <a
+                    href="https://github.com/alonti1"
+                    target="_blank"
+                    rel="noopener"
+                    >פרופיל</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="field">
+                <label for="fullName">שם מלא</label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                />
+                <p class="error" id="errName" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">אימייל</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+                <p class="error" id="errEmail" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="message">הודעה</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  minlength="10"
+                ></textarea>
+                <p class="error" id="errMsg" aria-live="polite"></p>
+              </div>
+
+              <button class="btn primary" type="submit">שלח</button>
+              <p
+                class="form-status"
+                id="formStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Alon • Portfolio</p>
+        <a class="to-top" href="#home">חזרה למעלה</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
