@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager - HackerU Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>ניהול משימות</h1>
+        <p>ארגן את היום שלך בצורה חכמה</p>
+      </header>
+
+      <main>
+        <div class="card input-card">
+          <div class="input-group">
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="מה צריך לבצע היום?"
+            />
+            <input type="date" id="dateInput" />
+          </div>
+          <button id="addTaskBtn" class="primary-btn">
+            <span>+</span> הוסף משימה
+          </button>
+        </div>
+
+        <div class="controls-area">
+          <div class="filters">
+            <button class="filter-btn active" id="filterAll">הכל</button>
+            <button class="filter-btn" id="filterActive">לביצוע</button>
+            <button class="filter-btn" id="filterCompleted">הושלמו</button>
+          </div>
+          <button id="sortBtn" class="text-btn">מיין לפי תאריך 📅</button>
+        </div>
+
+        <ul id="taskList"></ul>
+      </main>
+
+      <footer>
+        <p>&copy; HackerU Project</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
